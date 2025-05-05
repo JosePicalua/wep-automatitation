@@ -38,23 +38,6 @@ proyecto_web_scraping/
 | GET    | `/carts`                  | Devuelve los carritos con detalles de productos.          |
 | GET    | `/analytics/slow_sales`  | Analiza ventas por producto y clasifica su rendimiento.   |
 
-### Ejemplo de salida `/analytics/slow_sales`:
-```json
-{
-  "productos": [
-    {
-      "product": {
-        "id": 1,
-        "title": "iPhone 9",
-        "category": "smartphones"
-      },
-      "ventas_totales": 18,
-      "promedio_por_carrito": 6,
-      "ventas": [...],
-      "nivel_ventas": "BAJA"
-    }
-  ]
-}
 
 🧪 Instalación y Uso
 Clona este repositorio:
@@ -96,3 +79,23 @@ Esta API es de uso educativo/demo, no para entornos de producción.
 Los datos se obtienen de una fuente simulada, no en tiempo real.
 
 Desarrollado con 💻 por [@JosePicalua]
+
+
+### Ejemplo de salida `/analytics/slow_sales`:
+```json
+{
+  "productos": [
+    {
+      "product": {
+        "id": 1,
+        "title": "iPhone 9",
+        "category": "smartphones"
+      },
+      "ventas_totales": 18,
+      "promedio_por_carrito": 6,
+      "ventas": [...],
+      "nivel_ventas": "BAJA"
+    }
+  ]
+}
+
